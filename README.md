@@ -75,6 +75,7 @@ Claw-Empire transforms your AI coding assistants — connected via **CLI**, **OA
 - **Docs endpoints and public API surface are covered** - `/api/docs`, swagger bootstrap, `/api/openapi.json`, and contributor-facing utility routes are now checked directly in CI.
 - **API docs were refreshed to match the real main-branch surface** - `docs/api.md` and `docs/openapi.json` now cover the contributor-facing ops/API routes added over time, including task reports, project helpers, subtasks, agent spawn, announcements/directives, GitHub/OAuth/skills/sprites/update-auto routes.
 - **E2E inbox verification uses a non-sensitive test secret** - CI no longer depends on any developer-local `.env` secret for `/api/inbox` coverage.
+- **PR #49, #52, and #55 follow-ups are included in the same release line** - PR #49 aligned Discord channel OpenAPI output with the real route and tightened test isolation, PR #55 added per-provider model search in API Settings, and the safe subset of PR #52 added portable Windows local dev launcher scripts.
 
 - Full notes: [`docs/releases/v2.0.2.md`](docs/releases/v2.0.2.md)
 - API docs: [`docs/api.md`](docs/api.md), [`docs/openapi.json`](docs/openapi.json)

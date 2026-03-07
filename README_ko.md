@@ -75,6 +75,7 @@ Claw-Empire는 **CLI**, **OAuth**, **직접 API 키** 방식으로 연결된 AI 
 - **문서 엔드포인트와 공개 API 표면 검증 추가** - `/api/docs`, swagger bootstrap, `/api/openapi.json`, contributor-facing 유틸리티 경로를 CI가 직접 확인합니다.
 - **API 문서를 실제 main 표면에 맞춰 최신화** - `docs/api.md`와 `docs/openapi.json`에 task reports, project helpers, subtasks, agent spawn, announcements/directives, GitHub/OAuth/skills/sprites/update-auto 계열을 반영했습니다.
 - **E2E inbox 검증이 로컬 시크릿에 의존하지 않음** - `/api/inbox` 테스트는 개발자 `.env` 대신 비민감 테스트용 secret으로 동작합니다.
+- **PR #49, #52, #55 후속 반영도 같은 릴리즈 라인에 포함** - PR #49는 Discord 채널 OpenAPI 출력과 테스트 격리를 정리했고, PR #55는 API Settings에 프로바이더별 모델 검색을 추가했으며, PR #52는 안전한 범위만 골라 Windows 로컬 개발 실행 스크립트를 포함했습니다.
 
 - 상세 문서: [`docs/releases/v2.0.2.md`](docs/releases/v2.0.2.md)
 - API 문서: [`docs/api.md`](docs/api.md), [`docs/openapi.json`](docs/openapi.json)

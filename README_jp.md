@@ -75,6 +75,7 @@ Claw-Empireは **CLI**、**OAuth**、**直接APIキー** で接続されたAIコ
 - **ドキュメント配信経路と公開 API 表面を検証** - `/api/docs`、swagger bootstrap、`/api/openapi.json`、contributor-facing なユーティリティ経路を CI で確認するようにしました。
 - **API ドキュメントを main の実ルート表面に同期** - `docs/api.md` と `docs/openapi.json` に task reports、project helpers、subtasks、agent spawn、announcements/directives、GitHub/OAuth/skills/sprites/update-auto 系を反映しました。
 - **E2E inbox 検証はローカル秘密情報に依存しません** - `/api/inbox` テストは開発者ローカル `.env` ではなく、非機密のテスト専用 secret を使います。
+- **PR #49、#52、#55 の追加入力も同じリリースに含めました** - PR #49 では Discord チャンネル OpenAPI 出力とテスト分離を整え、PR #55 では API Settings にプロバイダー単位のモデル検索を追加し、PR #52 では安全な範囲に絞って Windows ローカル開発起動スクリプトを追加しました。
 
 - 詳細: [`docs/releases/v2.0.2.md`](docs/releases/v2.0.2.md)
 - APIドキュメント: [`docs/api.md`](docs/api.md), [`docs/openapi.json`](docs/openapi.json)
